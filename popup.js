@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch (err) {
     buttonSection.style.display = "none";
     video.style.display = "none";
-    infoText.innerHTML = "⚠️ Camera access required!<br/>Please allow it in the site settings.";
+    infoText.innerHTML = "⚠️ Unable to access camera!<br/>Please allow from the site settings.";
     fixBtn.style.display = "flex";
     fixBtn.addEventListener("click", () => {
       const extId = chrome.runtime.id; // dynamically get your extension's ID
