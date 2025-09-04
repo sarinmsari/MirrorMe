@@ -1,0 +1,66 @@
+html,body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.container{
+  min-width: 350px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#mirror {
+  width: 350px;
+  height: auto;
+  min-height: 200px;
+  border-radius: 12px;
+  transform: scaleX(-1); /* mirror effect */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.button-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+button {
+  padding: 12px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #222222;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+}
+
+button:hover {
+  background: #333333;
+}
+
+.info-section{
+  font-size: 14px;
+}
+
+.info-text{
+  line-height: 20px;
+}
+
+#fixBtn{
+  margin-top: 16px;
+}
